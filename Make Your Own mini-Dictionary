@@ -1,0 +1,5 @@
+ascii_dict = dict()
+number = range(97,122)
+for i in number:
+    ascii_dict[chr(i)] = str(i)
+print(ascii_dict)
