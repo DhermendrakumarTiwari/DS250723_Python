@@ -1,0 +1,9 @@
+def string_reverse(n):
+
+    rstr1 = ''
+    index = len(n)
+    while index > 0:
+        rstr1 += n[ index - 1 ]
+        index = index - 1
+    return rstr1
+print(string_reverse('1234abcd'))
