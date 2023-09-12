@@ -1,0 +1,42 @@
+class Student:
+    def __init__(self, name, age, rollNumber):
+        self.name = name
+        self.age = age
+        self.rollNumber = rollNumber
+
+    @property
+    def name(self):
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        self._name = name
+
+    @property
+    def age(self):
+        return self._age
+
+    @age.setter
+    def age(self, age):
+        self._age = age
+
+    @property
+    def rollNumber(self):
+        return self._rollNumber
+
+    @rollNumber.setter
+    def rollNumber(self, rollNumber):
+        self._rollNumber = rollNumber
+
+    def __str__(self):
+        return f"Student(name={self.name}, age={self.age}, rollNumber={self.rollNumber})"
+
+
+if __name__ == "__main__":
+    student1 = Student("Dhermendra Kumar Tiwari", 23, "AIMLMD250723")
+    print(student1)
+
+    student1.name = "Mukesh Kumar Gupta"
+    student1.age = 27
+    student1.rollNumber = "23082023"
+    print(student1)
