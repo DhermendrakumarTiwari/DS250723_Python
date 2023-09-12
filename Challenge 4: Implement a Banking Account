@@ -1,0 +1,23 @@
+class BankingAccount:
+    def __init__(self, title, balance, interest_rate):
+        self.title = title
+        self.balance = balance
+        self.interest_rate = interest_rate
+
+    def deposit(self, amount):
+        self.balance += amount
+
+    def withdraw(self, amount):
+        if amount > self.balance:
+            raise ValueError("Insufficient funds")
+        self.balance -= amount
+
+    def get_interest(self):
+        return self.balance * self.interest_rate
+
+    def __str__(self):
+        return f"Here, {self.title} is the title and {self.balance} is the balance and {self.interest_rate} is the interesetRate."
+    
+if __name__ == "__main__":
+    Banking = BankingAccount("Dhermendra Kumar Tiwari", 5000, "5")
+    print(Banking)
