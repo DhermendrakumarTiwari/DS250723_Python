@@ -1,0 +1,16 @@
+class Squares:
+    def __init__(self, numbers):
+        self.numbers = numbers
+
+    def square_numbers(self):
+        return [number ** 2 for number in self.numbers]
+
+    def sum_of_squares(self):
+        return sum(self.square_numbers())
+
+
+if __name__ == "__main__":
+    numbers = [1, 2, 3, 4, 5]
+    squares = Squares(numbers)
+    print(squares.square_numbers())  # [1, 4, 9, 16, 25]
+    print(squares.sum_of_squares())  # 55
