@@ -1,0 +1,24 @@
+import json
+
+dict =[
+    {
+    "Name" : "abd",
+    "contact_number" : "12345",
+    "email_id" : "abc@gmail.com",
+    "Married" : False,
+    "Indian" : True,
+    "Alternate_contact_number" : None
+},
+{
+    "Name" : "abd",
+    "contact_number" : "12345",
+    "email_id" : "abc@gmail.com",
+    "Married" : False,
+    "Indian" : True,
+    "Alternate_contact_number" : None
+}
+]
+
+file  = open("New_json.json","w")
+json.dump(dict,file)
+file.close()
