@@ -1,0 +1,15 @@
+import json
+
+dict ={
+    "Uttar Pardesh" : "Lucknow",
+    "Bihar" : "Patna",
+    "Madhya Pardesh" : "Bhopal",
+    "Rajasthan" : "Jaipur",
+    "Maharastra" : "Mumbai",
+    "Jharkhand" : "Ranchi",
+    "Himanchal Pardesh" : "Shimla"
+}
+
+file  = open("state_country.json","w")
+json.dump(dict,file)
+file.close()
